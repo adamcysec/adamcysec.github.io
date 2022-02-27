@@ -19,9 +19,9 @@ widget2:
   text: 'Learn more about how i got started in cyber security.'
 widget3:
   title: "My Resume"
-  url: 'https://github.com/Phlow/feeling-responsive'
+  url: 'https://www.linkedin.com/in/adamponce/'
   image: /widget/widget_resume_cyber.jpg
-  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. The code is well-documented and explains you how it works.'
+  text: 'View my job experience, certifications, and achievements on LinkedIn!'
 #
 # Use the call for action to show a button on the frontpage
 #
