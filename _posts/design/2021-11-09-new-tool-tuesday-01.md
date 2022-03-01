@@ -14,7 +14,7 @@ header:
     caption_url: https://unsplash.com/photos/XJXWbfSo2f0
 ---
 
-WinSuperMem.. aka SuperMem.. Is a python tool developed by James Lovato at CrowdStrike to analyze Windows memory images. What makes this tool unique is the collection of forensic tools running under the hood. CrowStrike has glued together several existing forensic tools to produce the most efficient forensic tool at finding and extracting forensic artifacts from only Windows memory images!
+[WinSuperMem](https://github.com/CrowdStrike/SuperMem).. aka SuperMem.. Is a python tool developed by James Lovato at CrowdStrike to analyze Windows memory images. What makes this tool unique is the collection of forensic tools running under the hood. CrowStrike has glued together several existing forensic tools to produce the most efficient forensic tool at finding and extracting forensic artifacts from only Windows memory images!
 
 CrowdStrike has glued together the following 7 forensic tools:
 
