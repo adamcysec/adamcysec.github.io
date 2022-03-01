@@ -27,6 +27,7 @@ At the very basic level, this tool can be executed by running the following comm
 `py sherlock.py username`
 
 - Sherlock will start enumerating websites and print the found websites to the screen
+-    You can view the full list of websites included in the scan within the [sites.md](https://github.com/sherlock-project/sherlock/blob/master/sites.md) file
 - A results txt output file will also be made in the current working directory
 
 To make this tool a little more efficient, i reccommend using the `--timeout` parameter to prevent waiting on those slow sites:
