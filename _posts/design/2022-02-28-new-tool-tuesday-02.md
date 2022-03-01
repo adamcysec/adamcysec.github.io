@@ -131,4 +131,4 @@ This is a clever method to speed up the execution time.
 
 ## Conclusion:
 
-Sherlock is an excellent OSINT tool that makes username discovery shockingly easy. This tool makes me want to register a unique username every time I need a new account to prevent this tool being used against myself. Instead of Google Dorking, you should always run this tool first to gather information on a target account. What makes this tool most valuable is the fact that it still receives updates for new websites from the community. It will be interesting to see the how much the execution time increase once 500 or more websites are added.
+Sherlock is an excellent OSINT tool that makes username discovery shockingly easy. This tool makes me want to register a unique username every time I need a new account to prevent this tool being used against myself. Instead of Google Dorking, you should always run this tool first to gather information on a target account. What makes this tool most valuable is the fact that it still receives updates for new websites from the community. It will be interesting to see the how much the execution time increases once 500 or more websites are added.
