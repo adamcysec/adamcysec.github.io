@@ -23,6 +23,7 @@ You can very quickly get this tool up and running! As long as you have python 3.
 ## Tool Execution:
 
 At the very basic level, this tool can be executed by running the following command:
+
 `py sherlock.py username`
 
 - Sherlock will start enumerating websites and print the found websites to the screen
