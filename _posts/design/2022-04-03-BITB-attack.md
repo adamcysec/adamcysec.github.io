@@ -6,7 +6,7 @@ teaser: "Stealing credentials by using a phishing site within a phishing site."
 categories:
 tags: 
 header:
-    title: "New Tool Tuesday #2"
+    title: "Browser in The Browser (BITB)"
     background-color: "#EFC94C;"
     #pattern: pattern_concrete.jpg
     image_fullwidth: /new-tool-tuesday/winSuperMem/header_cyber-sec.jpg
