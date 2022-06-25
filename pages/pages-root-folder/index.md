@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: header_cyber.jpg
+  image_fullwidth: adamcysec_logo_auto_x2.jpg
 widget1:
   title: "My Blog"
   url: 'http://adamcysec.github.io/blog/'

@@ -5,7 +5,7 @@ subheadline: "About Me"
 teaser: "\"Those that will deal with the computer will be far away ahead of those that do not\""
 permalink: "/info/"
 header:
-    image_fullwidth: "header_cyber.jpg"
+    image_fullwidth: header_cyber.jpg
 ---
 
 My cybersecurity journey started when I was nearing the end of my high school years. I needed to pick a career path to follow in college and eventually make good enough money to have an exciting life. My main interests at the time was playing Xbox 360 and building computers for gaming. My first career choice was to work at a computer repair shop where I could build home computers and remove viruses for people, then own a repair shop myself. Luckily that didn&#39;t happen as I could never get hired at a PC repair shop in high school or even work at BestBuy Geek squad.
