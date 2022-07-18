@@ -14,6 +14,8 @@ header:
     #caption_url: https://unsplash.com/photos/XJXWbfSo2f0
 ---
 
+[Github](https://github.com/adamcysec/cisaCatalogBot) | [Twitter](https://twitter.com/cisaCatalogBot)
+
 # The idea
 
 One of my favorite threat intel tools is [CISA’s Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
