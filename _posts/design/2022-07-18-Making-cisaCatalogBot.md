@@ -6,7 +6,7 @@ teaser: "Keeping up-to-date with the latest vulnerabilities"
 categories:
 tags: 
 header:
-    title: "Making the cisa Catalog Bot"
+    title: ""
     background-color: "#EFC94C;"
     #pattern: pattern_concrete.jpg
     image_fullwidth: /cisa_bot/cisa_page_banner.png
@@ -34,7 +34,7 @@ To keep my code organized, I will need to create 3 files each designed for a spe
 - twitterlib.py
     - This file will handle authenticating to Twitter’s api and sending the tweet.
 
-## cisa_KEVC.py
+## [cisa_KEVC.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/cisa_KEVC.py)
 
 This file has 5 methods for gathering data from CISA’s catalog:
 
@@ -53,7 +53,7 @@ This file has 5 methods for gathering data from CISA’s catalog:
 
  
 
-## cisa_alerts.py
+## [cisa_alerts.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/cisa_alerts.py)
 
 Now I can think about how I want to handle finding new vulnerabilities and creating a tweet from the data. 
 
@@ -80,7 +80,7 @@ Which looks like:
 
 ![bot_tweet.png](/images/cisa_bot/bot_tweet.png)
 
-## twitterlib.py
+## [twitterlib.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/twitterlib.py)
 
 Now I can figure out how to send the tweet to Twitter.
 
@@ -96,7 +96,7 @@ Tweepy will make it easy for me to authenticate and send tweets.
 
 The bot is complete! Now I just need to schedule `cisa_alerts.py` to run periodically and reset the the database ( `db.txt` ) once per day. 
 
-I will use my favorite python scheduler called [Rocketry](https://github.com/Miksus/rocketry). I will create a new file called `rocket_cisa_alerts.py` and save the following code:
+I will use my favorite python scheduler called [Rocketry](https://github.com/Miksus/rocketry). I can create a new file called `rocket_cisa_alerts.py` and save the following code:
 
 ```
 from rocketry import Rocketry
@@ -117,5 +117,7 @@ if __name__ == "__main__":
 ```
 
 Now execute command: `python3 rocket_cisa_alerts.py &`
+
+Rocketry will run the bot commands at the specified times. 
 
 [cisaCatalogBot](https://github.com/adamcysec/cisaCatalogBot) is alive! You will notice that the bot will check for updates every 3 hours. I recommend following the bot’s [Twitter page](https://twitter.com/cisaCatalogBot) to know when CISA updates their catalog.
