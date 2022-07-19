@@ -59,7 +59,7 @@ Now I can think about how I want to handle finding new vulnerabilities and creat
 
 ### Problem 1
 
-This script will simply use `get_catalog_by_date()` to get all vulnerabilities added today and ill periodicly check the catalog throughout the day. But, this is where I run into a problem. If CISA adds a vulnerability, the script will see it and tweet it. if cisa adds another vulnerability 3 hours later, the script will see 2 new vulnerabilities from today and tweet them and i don’t want to double tweet the same vulnerability. 
+This script will simply use `get_catalog_by_date()` to get all vulnerabilities added today and i'll periodicly check the catalog throughout the day. But, this is where I run into a problem. If CISA adds a vulnerability, the script will see it and tweet it. if cisa adds another vulnerability 3 hours later, the script will see 2 new vulnerabilities from today and tweet them. I don’t want to double tweet the same vulnerability. 
 
 To ensure I don’t tweet the same vulnerability twice, I will simply keep track of all vulnerabilities observed today in a database. That way, if CISA makes multiple updates throughout the day, the script will discard the previously seen vulnerabilities. 
 
