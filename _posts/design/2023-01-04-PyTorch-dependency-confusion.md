@@ -42,7 +42,7 @@ But what other options do we have? User [jcozar87](https://github.com/jcozar87) 
 
 PyTorch renamed dependency `torchtriton` to `pytorch-triton` and registered the new package to [pypi.org/project/pytorch-triton/](https://pypi.org/project/pytorch-triton/) with version number `0.0.1` , a dummy package!
 
-So for now, I would recommend developers using a 3rd party indexer for private packages to register all as dummy packages with the recommend name format: `companyname-package`.
+So for now, I would recommend developers using a 3rd party indexer for private packages to register all as dummy packages with the recommended name format: `companyname-package`.
 
 ## PyTorch’s Future
 
