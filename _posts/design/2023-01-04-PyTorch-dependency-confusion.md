@@ -46,6 +46,6 @@ So for now, I would recommend developers using a 3rd party indexer for private p
 
 ## PyTorch’s Future
 
-PyTorch was created by Meta (Facebook) for Meta and was then open sourced to the community. This means PyTorch was [never designed to be hosted within pypi](https://github.com/pytorch/pytorch/issues/26340#issuecomment-1368500377) and currently conflicts with pypi’s constraints of file size. `pytorch-triton` file size is to large to be served on pypi, which is why the 3rd party indexer is in use.
+PyTorch was created by Meta (Facebook) for Meta and was then open sourced to the community. This means PyTorch was [never designed to be hosted within pypi](https://github.com/pytorch/pytorch/issues/26340#issuecomment-1368500377) and currently conflicts with pypi’s constraints of file size. `pytorch-triton` file size is too large to be served on pypi, which is why the 3rd party indexer is in use.
 
 PyTorch has [plans](https://github.com/pytorch/pytorch/issues/26340#issuecomment-1369248199) to reduce file size and eventfully host everything on pypi.
