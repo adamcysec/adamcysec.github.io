@@ -36,7 +36,7 @@ The `pip` behavior to make [pypi.org](http://pypi.org) take precedence over pack
 
 There are a handful of individuals in GitHub issue [#8606](https://github.com/pypa/pip/issues/8606) that believe we should modify the behavior of `pip` , but the maintainers have [stated](https://github.com/pypa/pip/issues/8606#issuecomment-1370303166) that changes to `pip` is not an easy task and current improvements are done by volunteers. A major behavior change will most likely take funding to come to fruition.
 
-But what other options do we have? User [jcozar87](https://github.com/jcozar87) has documented our [current options](https://github.com/pypa/pip/issues/8606#issuecomment-1160838686)! The simplest one is to implemented a dummy package in pypi.org. All you have to do is create the same package name in pypi.org, but set the version to `0.0.0` . That way your 3rd party indexer will always take precedence.
+But what other options do we have? User [jcozar87](https://github.com/jcozar87) has documented our [current options](https://github.com/pypa/pip/issues/8606#issuecomment-1160838686)! The simplest one is to implement a dummy package in pypi.org. All you have to do is create the same package name in pypi.org, but set the version to `0.0.0` . That way your 3rd party indexer will always take precedence.
 
 ## What did PyTorch Do?
 
