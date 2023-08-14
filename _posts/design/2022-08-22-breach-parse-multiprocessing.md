@@ -18,7 +18,7 @@ This blog post is not for learning how to multiprocess, rather how I used multip
 
 ## About breach-parse
 
-Breach Compilation is 41 GB or 1,981 text files of user email address and password pairs from [old database leaks](https://www.google.com/search?q=%22breach+compilation%22&client=firefox-b-1-e&biw=1600&bih=803&tbm=nws&sxsrf=ALiCzsa-Ev3gWNGs7t9eqYFR3a_02uiiTQ%3A1661707951077&ei=r6YLY7aUBKKrqtsPsJmywAg&ved=0ahUKEwj2p5PBiOr5AhWilWoFHbCMDIgQ4dUDCAw&uact=5&oq=%22breach+compilation%22&gs_lcp=Cgxnd3Mtd2l6LW5ld3MQAzIECAAQQzIECAAQQzIECAAQQzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHOgUIABCABDoFCAAQhgM6BggAEB4QFlDdBVjDFmCiGGgAcAB4AIABUIgB0gGSAQEzmAEAoAEBwAEB&sclient=gws-wiz-news) that has recently gained main stream attention. [breach-parse](https://github.com/hmaverickadams/breach-parse) is a bash tool designed to search through this data and save matching credential pairs to another file.
+Breach Compilation is 41 GB or 1,981 text files of user email address and password pairs from [old database leaks](https://www.google.com/search?q=%22breach+compilation%22&client=firefox-b-1-e&biw=1600&bih=803&tbm=nws&sxsrf=ALiCzsa-Ev3gWNGs7t9eqYFR3a_02uiiTQ%3A1661707951077&ei=r6YLY7aUBKKrqtsPsJmywAg&ved=0ahUKEwj2p5PBiOr5AhWilWoFHbCMDIgQ4dUDCAw&uact=5&oq=%22breach+compilation%22&gs_lcp=Cgxnd3Mtd2l6LW5ld3MQAzIECAAQQzIECAAQQzIECAAQQzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHOgUIABCABDoFCAAQhgM6BggAEB4QFlDdBVjDFmCiGGgAcAB4AIABUIgB0gGSAQEzmAEAoAEBwAEB&sclient=gws-wiz-news){:target="_blank"} that has recently gained main stream attention. [breach-parse](https://github.com/hmaverickadams/breach-parse){:target="_blank"} is a bash tool designed to search through this data and save matching credential pairs to another file.
 
 ## The Problem
 
@@ -30,9 +30,9 @@ There are countless articles on learning the difference between concurrency vs p
 
 ### Apply this to Python
 
-Concurrency is achived by working with threads in Python library [threading](https://docs.python.org/3/library/threading.html) or [asyncio](https://docs.python.org/3/library/asyncio.html).
+Concurrency is achived by working with threads in Python library [threading](https://docs.python.org/3/library/threading.html){:target="_blank"} or [asyncio](https://docs.python.org/3/library/asyncio.html){:target="_blank"}.
 
-Parallelism is achived by working with not threads, but processes in Python library [multiprocessing](https://docs.python.org/3/library/multiprocessing.html).
+Parallelism is achived by working with not threads, but processes in Python library [multiprocessing](https://docs.python.org/3/library/multiprocessing.html){:target="_blank"}.
 
 I use multiprocessing to create one process for every core your CPU has.
 
@@ -40,7 +40,7 @@ I use multiprocessing to create one process for every core your CPU has.
 
 To get started with multiprocessing, you need to design a task to be worked by workers. My CPU has 4 cores, therefore I have 4 workers at my disposal. The task I want them to work is to read a file line by line comparing the line to a given search string. If the line contains the search string, then save that line to a list for later use.
 
-Now I can read 4 files at once, but we can actually do a little bit better with context managers in Python. We can use an [ExitStack](https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack) to open multiple files at the same time:
+Now I can read 4 files at once, but we can actually do a little bit better with context managers in Python. We can use an [ExitStack](https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack){:target="_blank"} to open multiple files at the same time:
 
 ```bash
 with ExitStack() as stack:
@@ -94,6 +94,6 @@ queue = [
 
 Each worker takes an item out of the queue and opens 5 files, then returns the matching lines and takes another item out of the queue.
 
-## [breach-parse.py](https://github.com/adamcysec/breach-parse)
+## [breach-parse.py](https://github.com/adamcysec/breach-parse){:target="_blank"}
 
 Now is time for the final results! Remember my data is stored on a HDD. The original Bash version finishes searching with search string `@tesla.com` in 413 seconds. My Python version finishes in 342 seconds. 71 seconds faster, however depending on your hardware your results will vary.

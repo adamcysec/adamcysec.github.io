@@ -14,11 +14,11 @@ header:
     caption_url: https://unsplash.com/photos/XJXWbfSo2f0
 ---
 
-[Sherlock](https://github.com/sherlock-project/sherlock) is an OSINT python tool developed by [Siddharth Dushantha](https://twitter.com/sidheart) to discover user accounts across several hundred social networks. This tool is still being maintained by Siddharth and by 97 [contributors](https://github.com/sherlock-project/sherlock/graphs/contributors). What makes this tool unique is the JSON database of websites connected to this tool. This database is the secret sauce that helps with tool efficiency and reliability. At the time of writing, the database contains 323 different websites for Sherlock to enumerate and figure out if the specified user account exists. 
+[Sherlock](https://github.com/sherlock-project/sherlock){:target="_blank"} is an OSINT python tool developed by [Siddharth Dushantha](https://twitter.com/sidheart){:target="_blank"} to discover user accounts across several hundred social networks. This tool is still being maintained by Siddharth and by 97 [contributors](https://github.com/sherlock-project/sherlock/graphs/contributors){:target="_blank"}. What makes this tool unique is the JSON database of websites connected to this tool. This database is the secret sauce that helps with tool efficiency and reliability. At the time of writing, the database contains 323 different websites for Sherlock to enumerate and figure out if the specified user account exists. 
 
 ## Tool Setup:
 
-You can very quickly get this tool up and running! As long as you have python 3.6 installed just follow the [installation instructions](https://github.com/sherlock-project/sherlock#installation) from Github.
+You can very quickly get this tool up and running! As long as you have python 3.6 installed just follow the [installation instructions](https://github.com/sherlock-project/sherlock#installation){:target="_blank"} from Github.
 
 ## Tool Execution:
 
@@ -27,7 +27,7 @@ At the very basic level, this tool can be executed by running the following comm
 `py sherlock.py username`
 
 - Sherlock will start enumerating websites and print the found websites to the screen
--    You can view the full list of websites included in the scan within the [sites.md](https://github.com/sherlock-project/sherlock/blob/master/sites.md) file
+-    You can view the full list of websites included in the scan within the [sites.md](https://github.com/sherlock-project/sherlock/blob/master/sites.md){:target="_blank"} file
 - A results txt output file will also be made in the current working directory
 
 To make this tool a little more efficient, i reccommend using the `--timeout` parameter to prevent waiting on those slow sites:
@@ -72,7 +72,7 @@ What makes this tool so great is the speed of execution. Sherlock is able to enu
 
 ### Asynchronous Requests:
 
-In order for Sherlock to enumerate 323 websites in a fast an efficient method, [asynchronous web request](https://github.com/ross/requests-futures#working-in-the-background) must be made. This allows python to send multiple web requests without having to wait for the previous request to finish. 
+In order for Sherlock to enumerate 323 websites in a fast an efficient method, [asynchronous web request](https://github.com/ross/requests-futures#working-in-the-background){:target="_blank"} must be made. This allows python to send multiple web requests without having to wait for the previous request to finish. 
 
 Sherlock puts all 323 websites in a queue and then creates workers to send the requests and store the response for later use.
 
@@ -82,7 +82,7 @@ In the screenshot above, 20 workers at max are made. Unless the queue is less th
 
 ### Data.json:
 
-The [data.json](https://github.com/sherlock-project/sherlock/blob/master/sherlock/resources/data.json) file is the json database i referenced earlier and is the heart of Sherlock. Without this file, adding new websites to scan and testing the existing coverage would be difficult to assess.
+The [data.json](https://github.com/sherlock-project/sherlock/blob/master/sherlock/resources/data.json){:target="_blank"} file is the json database i referenced earlier and is the heart of Sherlock. Without this file, adding new websites to scan and testing the existing coverage would be difficult to assess.
 
 Below is the first entry in data.json:
 

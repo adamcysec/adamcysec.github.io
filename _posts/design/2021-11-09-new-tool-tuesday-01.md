@@ -14,7 +14,7 @@ header:
     caption_url: https://unsplash.com/photos/XJXWbfSo2f0
 ---
 
-[WinSuperMem](https://github.com/CrowdStrike/SuperMem).. aka SuperMem.. Is a python tool developed by James Lovato at CrowdStrike to analyze Windows memory images. What makes this tool unique is the collection of forensic tools running under the hood. CrowStrike has glued together several existing forensic tools to produce the most efficient forensic tool at finding and extracting forensic artifacts from only Windows memory images!
+[WinSuperMem](https://github.com/CrowdStrike/SuperMem){:target="_blank"}.. aka SuperMem.. Is a python tool developed by James Lovato at CrowdStrike to analyze Windows memory images. What makes this tool unique is the collection of forensic tools running under the hood. CrowStrike has glued together several existing forensic tools to produce the most efficient forensic tool at finding and extracting forensic artifacts from only Windows memory images!
 
 CrowdStrike has glued together the following 7 forensic tools:
 
@@ -30,20 +30,20 @@ All of the tools listed above get utilized in the WinSuperMem.py python script a
 
 ## Tool Setup:
 
-I won&#39;t be giving step by step instructions, rather share my experience in setting up this tool. As a side note, I set this tool up on my Kali linux machine. The github page for [SuperMem](https://github.com/CrowdStrike/SuperMem#installation) made things easy as all of the tools required are listed under the [Installation section](https://github.com/CrowdStrike/SuperMem#installation). You will need to have both python 2 and 3 installed to use Volatility 2 and 3.
+I won&#39;t be giving step by step instructions, rather share my experience in setting up this tool. As a side note, I set this tool up on my Kali linux machine. The github page for [SuperMem](https://github.com/CrowdStrike/SuperMem#installation){:target="_blank"} made things easy as all of the tools required are listed under the [Installation section](https://github.com/CrowdStrike/SuperMem#installation){:target="_blank"}. You will need to have both python 2 and 3 installed to use Volatility 2 and 3.
 
 Below are links to the tool requirements of where I got them:
 
-- Volatility 3 - [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3)
-- Volatility 2 - [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)
+- Volatility 3 - [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3){:target="_blank"}
+- Volatility 2 - [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility){:target="_blank"}
 - Volatility 2 Community Plugins - included with above download
   - located in &quot;/volatility/volatility/plugins/&quot;
 - Bulk Extractor - preinstalled by Kali
-- Plaso - [https://github.com/log2timeline/plaso/tree/main/tools](https://github.com/log2timeline/plaso/tree/main/tools)
+- Plaso - [https://github.com/log2timeline/plaso/tree/main/tools](https://github.com/log2timeline/plaso/tree/main/tools){:target="_blank"}
   - You will need log2timeline.py and psort.py
 - Yara - apt install
 - Strings - preinstalled by Kali
-- EVTxtract - [https://github.com/williballenthin/EVTXtract](https://github.com/williballenthin/EVTXtract)
+- EVTxtract - [https://github.com/williballenthin/EVTXtract](https://github.com/williballenthin/EVTXtract){:target="_blank"}
 
 After installing all of the requirements, open up file winSuperMem.py in a code editor and modify the global file paths starting on line 23 and ending on line 33.
 
@@ -167,7 +167,7 @@ I tested the speed of WinSuperMem by running it against a 2GB memory dump file u
 
 ## Tool Challenge:
 
-In order to test the ability of this tool, I challenged myself to complete a TryHackMe room called [Forensics](https://tryhackme.com/room/forensics). This room has a &#39;medium&#39; difficulty and involves analyzing a memory dump and collecting IOCs.
+In order to test the ability of this tool, I challenged myself to complete a TryHackMe room called [Forensics](https://tryhackme.com/room/forensics){:target="_blank"}. This room has a &#39;medium&#39; difficulty and involves analyzing a memory dump and collecting IOCs.
 
 After downloading the memory dump, I executed the following command:
 

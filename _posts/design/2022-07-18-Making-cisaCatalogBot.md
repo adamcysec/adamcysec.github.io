@@ -14,13 +14,13 @@ header:
     #caption_url: https://unsplash.com/photos/XJXWbfSo2f0
 ---
 
-[Github](https://github.com/adamcysec/cisaCatalogBot) | [Twitter](https://twitter.com/cisaCatalogBot)
+[Github](https://github.com/adamcysec/cisaCatalogBot){:target="_blank"} | [Twitter](https://twitter.com/cisaCatalogBot){:target="_blank"}
 
 # The idea
 
-One of my favorite threat intel tools is [CISA’s Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
+One of my favorite threat intel tools is [CISA’s Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog){:target="_blank"}.
 
-This is a great resource for keeping up with what vulnerabilities attackers are targeting in the wild. CISA does a great job of keeping the catalog up to date, however they don’t provide a newsletter to receive updates when new vulnerabilities are added. That’s when I got the idea to create a twitter bot to tweet every new addition to the catalog using [Python](https://www.python.org/). 
+This is a great resource for keeping up with what vulnerabilities attackers are targeting in the wild. CISA does a great job of keeping the catalog up to date, however they don’t provide a newsletter to receive updates when new vulnerabilities are added. That’s when I got the idea to create a twitter bot to tweet every new addition to the catalog using [Python](https://www.python.org/){:target="_blank"}. 
 
 # Script Planning
 
@@ -34,7 +34,7 @@ To keep my code organized, I will need to create 3 files each designed for a spe
 - twitterlib.py
     - This file will handle authenticating to Twitter’s api and sending the tweet.
 
-## [cisa_KEVC.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/cisa_KEVC.py)
+## [cisa_KEVC.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/cisa_KEVC.py){:target="_blank"}
 
 This file has 5 methods for gathering data from CISA’s catalog:
 
@@ -53,7 +53,7 @@ This file has 5 methods for gathering data from CISA’s catalog:
 
  
 
-## [cisa_alerts.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/cisa_alerts.py)
+## [cisa_alerts.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/cisa_alerts.py){:target="_blank"}
 
 Now I can think about how I want to handle finding new vulnerabilities and creating a tweet from the data. 
 
@@ -80,11 +80,11 @@ Which looks like:
 
 ![bot_tweet.png](/images/cisa_bot/bot_tweet.png)
 
-## [twitterlib.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/twitterlib.py)
+## [twitterlib.py](https://github.com/adamcysec/cisaCatalogBot/blob/main/twitterlib.py){:target="_blank"}
 
 Now I can figure out how to send the tweet to Twitter.
 
-Whenever working with big APIs like Twitter’s.. it is always easier to use a python wrapper, so I decided to use [Tweepy](https://github.com/tweepy/tweepy).
+Whenever working with big APIs like Twitter’s.. it is always easier to use a python wrapper, so I decided to use [Tweepy](https://github.com/tweepy/tweepy){:target="_blank"}.
 
 Tweepy will make it easy for me to authenticate and send tweets. 
 

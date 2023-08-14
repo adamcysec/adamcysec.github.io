@@ -16,7 +16,7 @@ header:
 
 ## What Companies did Hackers Target in 2022?
 
-CISA keeps track of vulnerabilities attackers are targetting in the wild in order to inform the public of which vulnerabilities need priority. Using their [Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), I will aggregate the data for 2022.
+CISA keeps track of vulnerabilities attackers are targetting in the wild in order to inform the public of which vulnerabilities need priority. Using their [Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog){:target="_blank"}, I will aggregate the data for 2022.
 
 ## Top companies with total vulnerabilities 2022
 
@@ -55,6 +55,6 @@ It’s no surprise that Microsoft is number one consecutively. It’s interestin
 
 ## cisaCatalogBot
 
-If you’re unaware, I run a Twitter bot [@cisaCatalogBot](https://twitter.com/cisaCatalogBot) that tweets everytime CISA updates their [Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog). Be sure to follow the bot to stay up-to-date when a new vulnerability is added!
+If you’re unaware, I run a Twitter bot [@cisaCatalogBot](https://twitter.com/cisaCatalogBot){:target="_blank"} that tweets everytime CISA updates their [Known Exploited Vulnerabilites Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog){:target="_blank"}. Be sure to follow the bot to stay up-to-date when a new vulnerability is added!
 
-Read about how I made the cisaCatalogBot with python: [Making the cisaCatalogBot](https://adamcysec.github.io/Making-cisaCatalogBot/)
+Read about how I made the cisaCatalogBot with python: [Making the cisaCatalogBot](https://adamcysec.github.io/Making-cisaCatalogBot/){:target="_blank"}

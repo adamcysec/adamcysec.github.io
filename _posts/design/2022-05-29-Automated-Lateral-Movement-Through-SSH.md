@@ -70,7 +70,7 @@ KEYS3=$(find ~/ /root /home -maxdepth 3 -name '*.pem' | uniq)
 
 - `KEYS` uses the `find` command to return the file paths of all `id_rsa` private key files.
 - `KEYS2` uses the `cat` command to display the contents of all `.ssh/config` files and looks for private ssh key file paths as denoted by `IdentityFile` .
-    - [https://linuxize.com/post/using-the-ssh-config-file/#shared-ssh-config-file-example](https://linuxize.com/post/using-the-ssh-config-file/#shared-ssh-config-file-example)
+    - [https://linuxize.com/post/using-the-ssh-config-file/#shared-ssh-config-file-example](https://linuxize.com/post/using-the-ssh-config-file/#shared-ssh-config-file-example){:target="_blank"}
 - `KEYS3` uses the `find` command to return the file paths for all private ssh keys in the pem format.
 
 ### Finding host names
@@ -141,15 +141,15 @@ Under some circumstances, you may need to automate an ssh connection and this is
 
 ### Host name hashing
 
-In this lateral movement technique, the adversary uses the `known_hosts` file to pull host names previously connected to. This attack method is not new and OpenSSH has provided a mitigation for it through a config option called HashKnownHosts. Enabling this config option will force the ssh client to hash the host name before logging the information, [read more about his feature](https://techglimpse.com/how-to-hash-known-hosts-files-of-ssh-directory/). 
+In this lateral movement technique, the adversary uses the `known_hosts` file to pull host names previously connected to. This attack method is not new and OpenSSH has provided a mitigation for it through a config option called HashKnownHosts. Enabling this config option will force the ssh client to hash the host name before logging the information, [read more about his feature](https://techglimpse.com/how-to-hash-known-hosts-files-of-ssh-directory/){:target="_blank"}. 
 
-It should be noted that according to the [ssh_config man page](https://man7.org/linux/man-pages/man5/ssh_config.5.html), this feature is not enabled by default. It’s possible that most modern Linux distros enabled this for you, as my Kali machine already had this feature enabled. For me, this was enabled in file `/etc/ssh/ssh_config` .
+It should be noted that according to the [ssh_config man page](https://man7.org/linux/man-pages/man5/ssh_config.5.html){:target="_blank"}, this feature is not enabled by default. It’s possible that most modern Linux distros enabled this for you, as my Kali machine already had this feature enabled. For me, this was enabled in file `/etc/ssh/ssh_config` .
 
 With HashKnownHosts on, you can prevent the adversary from discovering additional hosts 
 
 ### Bash history
 
-The second method of host discovery from the adversary is by reading the `bash_history` file for every user. Bash history is stored for every bash command executed, even passwords passed on the command line. As a defender, we can configure the `~/.bash_logout` file to clear the bash history after every logout. You could even go as far as to completely disable the logging of bash history. You can learn more about clearing bash history [here](https://www.cyberciti.biz/faq/clear-the-shell-history-in-ubuntu-linux/).
+The second method of host discovery from the adversary is by reading the `bash_history` file for every user. Bash history is stored for every bash command executed, even passwords passed on the command line. As a defender, we can configure the `~/.bash_logout` file to clear the bash history after every logout. You could even go as far as to completely disable the logging of bash history. You can learn more about clearing bash history [here](https://www.cyberciti.biz/faq/clear-the-shell-history-in-ubuntu-linux/){:target="_blank"}.
 
 ## Threat Hunting
 

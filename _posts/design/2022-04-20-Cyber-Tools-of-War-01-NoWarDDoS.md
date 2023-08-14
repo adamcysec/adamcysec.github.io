@@ -17,15 +17,15 @@ header:
 
 ## Current Political Climate
 
-On Thursday, February 24th 2022, Russia began their invasion of Ukraine. Immediately, video footage of the invasion from both the Russian and Ukraine army’s emerged. The videos can be viewed on sites such as Reddit community [UkraineWarVideoReport](https://www.reddit.com/r/UkraineWarVideoReport/). 
+On Thursday, February 24th 2022, Russia began their invasion of Ukraine. Immediately, video footage of the invasion from both the Russian and Ukraine army’s emerged. The videos can be viewed on sites such as Reddit community [UkraineWarVideoReport](https://www.reddit.com/r/UkraineWarVideoReport/){:target="_blank"}. 
 
-On Saturday, February 26th 2022, the Vice Prime Minister of Ukraine Mykhailo Fedororv [tweeted](https://twitter.com/FedorovMykhailo/status/1497642156076511233) for anyone with “digital talents” to join the linked Telegram channel to be given tasks. One of those tasks is performing DDoS attacks against Russian hosted web sites.
+On Saturday, February 26th 2022, the Vice Prime Minister of Ukraine Mykhailo Fedororv [tweeted](https://twitter.com/FedorovMykhailo/status/1497642156076511233){:target="_blank"} for anyone with “digital talents” to join the linked Telegram channel to be given tasks. One of those tasks is performing DDoS attacks against Russian hosted web sites.
 
-Two days later a python DDoS tool was number 8 on the [trending list](https://twitter.com/bot_for_devs/status/1498297121119907850?s=20&t=pR0mMPTJxb750_s3oIsHWw) for GitHub called NoWarDDoS.
+Two days later a python DDoS tool was number 8 on the [trending list](https://twitter.com/bot_for_devs/status/1498297121119907850?s=20&t=pR0mMPTJxb750_s3oIsHWw){:target="_blank"} for GitHub called NoWarDDoS.
 
 ## NoWarDDoS
 
-On February 26th 2022, a python tool called [NoWarDDoS](https://github.com/AlexTrushkovsky/NoWarDDoS) was published to GitHub by user [AlexTrushovsky](https://github.com/AlexTrushkovsky). This tool was designed to allow anyone to easily execute and participate in a DDoS attack targeting Russian web sites. The repository has a respectable number of stars at 512 and 124 forks. 
+On February 26th 2022, a python tool called [NoWarDDoS](https://github.com/AlexTrushkovsky/NoWarDDoS){:target="_blank"} was published to GitHub by user [AlexTrushovsky](https://github.com/AlexTrushkovsky){:target="_blank"}. This tool was designed to allow anyone to easily execute and participate in a DDoS attack targeting Russian web sites. The repository has a respectable number of stars at 512 and 124 forks. 
 
 ### The Readme
 
@@ -58,9 +58,9 @@ Continuing the analysis with file `RemoteProivder.py` :
 Continuing the analysis with file `settings.py` :
 
 1. Line 6 declares variable `_DEFAULT_SITES_HOTS` which contains two links
-    1. [https://gitlab.com/jacobean_jerboa/sample/-/raw/main/sample](https://gitlab.com/jacobean_jerboa/sample/-/raw/main/sample)
+    1. [https://gitlab.com/jacobean_jerboa/sample/-/raw/main/sample](https://gitlab.com/jacobean_jerboa/sample/-/raw/main/sample){:target="_blank"}
         1. a json file with 6 Russian based web sites
-    2. [https://raw.githubusercontent.com/opengs/uashieldtargets/v2/sites.json](https://raw.githubusercontent.com/opengs/uashieldtargets/v2/sites.json)
+    2. [https://raw.githubusercontent.com/opengs/uashieldtargets/v2/sites.json](https://raw.githubusercontent.com/opengs/uashieldtargets/v2/sites.json){:target="_blank"}
         1. a json file with 50 Russian based web sites
 
 These 2 files are hosting the target web sites to be attacked. The URLs also reference the files with the raw content link which means the tool author can update the target host files without requiring the end user to update the tool again. 
@@ -111,7 +111,7 @@ This tool is also designed to send your GET request through a proxy if the serve
 The list of proxies can also be found in the `settings.py` file:
 
 - Line 11 contains a GitHub link
-    - [https://raw.githubusercontent.com/opengs/uashieldtargets/v2/proxy.json](https://raw.githubusercontent.com/opengs/uashieldtargets/v2/proxy.json)
+    - [https://raw.githubusercontent.com/opengs/uashieldtargets/v2/proxy.json](https://raw.githubusercontent.com/opengs/uashieldtargets/v2/proxy.json){:target="_blank"}
         - contains 3,449 different proxy addresses
 
 ### flood.sh
@@ -147,11 +147,11 @@ The shell script also provides functions to monitor the execution of the tool:
 
 You can also run this tool as a docker container. 
 
-The [Dockerfile](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/Dockerfile) contains the container startup commands. On start, the container will run alpine linux, copies over all of the python files, copies the requirements txt file, and executes the `main.py` file with python3. 
+The [Dockerfile](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/Dockerfile){:target="_blank"} contains the container startup commands. On start, the container will run alpine linux, copies over all of the python files, copies the requirements txt file, and executes the `main.py` file with python3. 
 
 **Settings.py**
 
-The [settings.py](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/settings.py) file contains the DDoS settings for the docker container. By default, the max threads created is set to 500 with a max of 500 web requests sent to each site. 
+The [settings.py](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/settings.py){:target="_blank"} file contains the DDoS settings for the docker container. By default, the max threads created is set to 500 with a max of 500 web requests sent to each site. 
 
 ## Conclusion
 

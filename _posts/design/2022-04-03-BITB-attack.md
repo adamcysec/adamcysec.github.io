@@ -14,7 +14,7 @@ header:
     caption_url: https://unsplash.com/photos/XJXWbfSo2f0
 ---
 
-github user mrd0x created a phishing attack that preys on websites that use single sign-on pop up windows as a login method called [browser in the browser attack](https://github.com/mrd0x/BITB).
+github user mrd0x created a phishing attack that preys on websites that use single sign-on pop up windows as a login method called [browser in the browser attack](https://github.com/mrd0x/BITB){:target="_blank"}.
 
 ![01_popup.png](/images/BITB Attack/01_popup.png)
 
@@ -77,4 +77,4 @@ This attack method has already been used in the wild to steal Steam account cred
 
 ![06_fake_steampage.png](/images/BITB Attack/06_fake_steampage.png)
 
-The above screenshot is a fake Steam login pop up. This attack was reported by user [Bangaladore on Reddit](https://www.reddit.com/r/Steam/comments/bvqs92/insanely_clever_steam_credential_stealing_scam/) in 2019. In my opinion, we will not be seeing this attack more in the future due to the limited scope of sites. Not every site uses single sign-in and the sites that do, often do not use a pop up window. Most sites use a redirect within the same window to handle the single sign-in.
+The above screenshot is a fake Steam login pop up. This attack was reported by user [Bangaladore on Reddit](https://www.reddit.com/r/Steam/comments/bvqs92/insanely_clever_steam_credential_stealing_scam/){:target="_blank"} in 2019. In my opinion, we will not be seeing this attack more in the future due to the limited scope of sites. Not every site uses single sign-in and the sites that do, often do not use a pop up window. Most sites use a redirect within the same window to handle the single sign-in.
